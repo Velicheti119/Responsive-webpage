@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Responsive Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navigation">
+      <div class="banner">
+        <img src="banner.jpg" class="cover" /> /* insert pic */
+      </div>
+      <div class="navLink">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">Interests</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact Me</a></li>
+        </ul>
+      </div>
+    </div>
+    <section class="sec">
+      <header>
+        <div class="toggle"></div>
+        <a href="#" class="btn">Hire Me</a>
+      </header>
+      <div class="imgBx">
+        <img src="cover.jpg" class="cover" />
+      </div>
+      <div class="content">
+        <h2>Hi, I am <br /><span>Tarun Velicheti</span></h2>
+        <p>
+          This is paragraph 1 content. Random words just to fill the space
+          please click the button below. Lorem Ipsum is willing to explain why
+          you are doing this. Lorem Ipsum is also known as the author of the
+          title.
+        </p>
+        <a href="#" class="btn">Download My Resume</a>
+      </div>
+      <footer>
+        <ul class="sci">
+          <li>
+            <a href="#"><img src="facebook.png" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="linkedin.png" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="instagram.png" /></a>
+          </li>
+        </ul>
+        <p class="copyrightText">Tarun Velicheti</p>
+      </footer>
+    </section>
+    <script>
+      let menuToggle = document.querySelector(".toggle");
+      let navigation = document.querySelector(".navigation");
+      let sec = document.querySelector(".sec");
+      menuToggle.onclick = function () {
+        menuToggle.classList.toggle("active");
+        navigation.classList.toggle("active");
+        sec.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>
